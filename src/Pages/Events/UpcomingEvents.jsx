@@ -3,8 +3,9 @@ import React, { useEffect, useState } from 'react';
 import EventOptions from './EventOptions';
 import BookingModal from '../Booking/BookingModal';
 
-const UpcomingEvents = ({ selectedDate }) => {
+const UpcomingEvents = ({ selectedDate, setSelectedDate }) => {
   const [events, setEvents] = useState([]);
+  const [program, setProgram] = useState(null);
   useEffect(() => {
     fetch('ourEvents.json')
       .then((res) => res.json())
@@ -21,10 +22,20 @@ const UpcomingEvents = ({ selectedDate }) => {
         </p>
         <div className="grid grid-cold-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 ">
           {events.map((option) => (
-            <EventOptions key={option._id} eventOption={option}></EventOptions>
+            <EventOptions
+              key={option._id}
+              eventOption={option}
+              setProgram={setProgram}
+            ></EventOptions>
           ))}
         </div>
-        <BookingModal />
+        {program && (
+          <BookingModal
+            program={program}
+            selectedDate={selectedDate}
+            setProgram={setProgram}
+          />
+        )}
       </div>
     </section>
   );
