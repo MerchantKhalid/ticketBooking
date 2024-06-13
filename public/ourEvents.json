@@ -1,0 +1,60 @@
+[
+  {
+    "_id": 1,
+    "name": "Sight Seeing",
+    "img": "https://tse3.mm.bing.net/th?id=OIP.HfW2reAQvmeeXaEMOnZeGgHaE8&pid=Api&P=0&h=180",
+    "slots": [
+      "08.00 AM - 08.30 AM",
+      "08.30 AM - 09.00 AM",
+      "09.00 AM - 9.30 AM",
+      "09.30 AM - 10.00 AM",
+      "10.00 AM - 10.30 AM",
+      "10.30 AM - 11.00 AM"
+    ]
+  },
+  {
+    "_id": 2,
+    "name": "Porto Hub",
+    "img": "https://tse3.mm.bing.net/th?id=OIP.zxmSgYe9654eLI4117GavgHaEK&pid=Api&P=0&h=180",
+    "slots": [
+      "09.00 AM - 9.30 AM",
+      "09.30 AM - 10.00 AM",
+      "10.00 AM - 10.30 AM",
+      "10.30 AM - 11.00 AM"
+    ]
+  },
+  {
+    "_id": 3,
+    "name": "Albefeira Walking",
+    "img": "https://tse4.mm.bing.net/th?id=OIP.0_RrbXVObNDyuWG1G5LnEwHaE8&pid=Api&P=0&h=180",
+    "slots": []
+  },
+  {
+    "_id": 4,
+    "name": "Boat Ride",
+    "img": "https://tse4.mm.bing.net/th?id=OIP.g7FfFKU88U2gzlSNIA6gOQHaEu&pid=Api&P=0&h=180",
+    "slots": ["10.00 AM - 10.30 AM", "10.30 AM - 11.00 AM"]
+  },
+  {
+    "_id": 5,
+    "name": "Jenifer Drama",
+    "img": "https://tse4.mm.bing.net/th?id=OIP.4UAY-UoEv2WcACkk7cGwOAHaEL&pid=Api&P=0&h=180",
+    "slots": [
+      "08.30 AM - 09.00 AM",
+      "09.00 AM - 9.30 AM",
+      "09.30 AM - 10.00 AM",
+      "10.00 AM - 10.30 AM",
+      "10.30 AM - 11.00 AM"
+    ]
+  },
+  {
+    "_id": 6,
+    "name": "Musical Eve",
+    "img": "https://tse4.mm.bing.net/th?id=OIP.4UAY-UoEv2WcACkk7cGwOAHaEL&pid=Api&P=0&h=180",
+    "slots": [
+      "09.30 AM - 10.00 AM",
+      "10.00 AM - 10.30 AM",
+      "10.30 AM - 11.00 AM"
+    ]
+  }
+]

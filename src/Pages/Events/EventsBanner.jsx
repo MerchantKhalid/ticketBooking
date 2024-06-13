@@ -1,13 +1,10 @@
 import { useState } from 'react';
 import banner from '../../assets/images/banner.jpg';
 import { DayPicker } from 'react-day-picker';
-import { format } from 'date-fns';
 
-const EventsBanner = () => {
-  const [selectedDate, setSelectedDate] = useState(new Date());
-
+const EventsBanner = ({ selectedDate, setSelectedDate }) => {
   return (
-    <section className="p-10 ">
+    <section className=" ">
       <div
         className="hero min-h-screen"
         style={{ backgroundImage: `url(${banner})` }}
@@ -20,26 +17,10 @@ const EventsBanner = () => {
               selected={selectedDate}
               onSelect={setSelectedDate}
             />
-            <p className="font-bold">
-              Your chosen event is : {format(selectedDate, 'PP')}
-            </p>
           </div>
         </div>
       </div>
     </section>
-
-    // <header>
-    //   <div className="hero">
-    //     <div className="hero-content flex-col lg:flex-row-reverse">
-    //       <img src={banner} className="max-w-sm rounded-lg shadow-2xl" />
-
-    //       {/* Calendar  */}
-    //       <div>
-    //         <DayPicker />
-    //       </div>
-    //     </div>
-    //   </div>
-    // </header>
   );
 };
 
